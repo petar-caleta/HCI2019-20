@@ -23,7 +23,7 @@
 
   ##### High fidelity - Contact us:
 <p align="center">
-   <img src="https://github.com/petar-caleta/HCI2019-20/blob/master/design%20prototypes/low%20fidelity/Low%20fidelity%20mobile%20blog.png" width="300" alt="low fidelity for mobile blog.png">
+   <img src="https://github.com/petar-caleta/HCI2019-20/blob/master/design%20prototypes/high%20fidelity/Contact%20Us.png" width="300" alt="low fidelity for mobile blog.png">
    
  
 </p>
