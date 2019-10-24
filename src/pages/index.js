@@ -1,21 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
+//importat link od gatsby-a da mozemo linkat pageove na gatsbyev nacin
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi Labro</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+const IndexPage = () => <div> 
+   <h1>Project start</h1> 
+   <h2>Sites:</h2>   
+   <ul>
+     <li>
+       <Link to="/Home/Blog">Blog</Link>
+     </li>
+     <li>
+       <Link to="/Home/AboutUs">About Us</Link>
+     </li>
+     <li>
+       <Link to="/Home/Contact">Contact</Link>
+     </li>
+     <li>
+       <Link to="/Home/MyGallery">My Gallery</Link>
+     </li>
+   </ul>
+  </div>
+   //unordered list za stranice linkat
+   //kad smo link importali od gatsby linkamo pomocu <Link> i sa pathom otic
+export default IndexPage 
