@@ -24,9 +24,9 @@ const menuItems = [
 const Layout = props => {
   return (
     <div>
-      <Navigation menuItems={menuItems} />
       {props.children}
       <Link to="/">Go Home</Link>
+      <Navigation menuItems={menuItems} />
     </div>
   )
 }
