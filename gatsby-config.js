@@ -1,7 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Rosic Caleta Company`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    menuItems: [
+      {
+        text: "About Us",
+        link: "/AboutUs",
+      },
+      {
+        text: "Blog",
+        link: "/Blog",
+      },
+      {
+        text: "Contact",
+        link: "/Contact",
+      },
+      {
+        text: "My Gallery",
+        link: "/MyGallery",
+      },
+    ],
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -11,6 +29,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
     `gatsby-transformer-sharp`,
