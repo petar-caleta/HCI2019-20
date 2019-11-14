@@ -2,7 +2,8 @@ import React from "react"
 import Navigation from "./navigation"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-
+//ovo stoji samo za primjer ovaj menuItems iza ovo smo rijesili lijepo pomocu gatsby-config.js
+//sad to stoji u ItemsMenu povri plugina u configu
 /*
 const menuItems = [
   {
@@ -43,8 +44,8 @@ const Layout = props => {
   return (
     <div>
       {props.children}
-      <Link to="/">Go Home</Link>
       <Navigation menuItems={menuItems} />
+      <Link to="/">Go Home</Link>
     </div>
   )
 }
