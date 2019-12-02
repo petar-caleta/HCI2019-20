@@ -1,5 +1,5 @@
 import React from "react"
-import Navigation from "./navigation"
+import Navigation from "./Navigation"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 //ovo stoji samo za primjer ovaj menuItems iza ovo smo rijesili lijepo pomocu gatsby-config.js
