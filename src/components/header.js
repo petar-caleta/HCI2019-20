@@ -7,7 +7,7 @@ const Header = () =>
 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     {/*###### LOGO ######*/}
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="./">
       <img
         src={logo}
         width="45"
@@ -25,6 +25,7 @@ const Header = () =>
             <Nav.Link href="./Blog">Blog</Nav.Link>
             <Nav.Link href="./AboutUs">About</Nav.Link>
             <Nav.Link href="./Contact">Contact</Nav.Link>
+            <Nav.Link href="./MyGallery">My Gallery</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#">Action1</NavDropdown.Item>
                 <NavDropdown.Item href="#">Action2</NavDropdown.Item>
