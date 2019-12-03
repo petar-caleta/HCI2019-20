@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 //importat link od gatsby-a da mozemo linkat pageove na gatsbyev nacin
 
-const IndexPage = ({ data }) => {
+const Index = ({ data }) => {
   console.log("Data iz indexa", data)
   return (
     <Layout>
@@ -16,6 +16,7 @@ const IndexPage = ({ data }) => {
       {data.allFile.edges.map(({ node }) => (
         <Img key={node.id} fluid={node.childImageSharp.fluid} />
       ))}
+      
       <h2 style={{ backgroundColor: "pink", color: "grey" }}>
         Sadrzaj ispod slici
       </h2>
@@ -42,4 +43,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default Index

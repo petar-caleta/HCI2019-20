@@ -1,3 +1,6 @@
+import "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
