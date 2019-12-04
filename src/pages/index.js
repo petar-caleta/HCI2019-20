@@ -16,10 +16,6 @@ const Index = ({ data }) => {
       {data.allFile.edges.map(({ node }) => (
         <Img key={node.id} fluid={node.childImageSharp.fluid} />
       ))}
-      
-      <h2 style={{ backgroundColor: "pink", color: "grey" }}>
-        Sadrzaj ispod slici
-      </h2>
     </Layout>
   )
 }
