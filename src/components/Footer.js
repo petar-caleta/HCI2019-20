@@ -8,8 +8,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 import Logo from '../images/logoinv.png'
 
-
-import "../styles/footerStyle.css"
+import style from "../styles/footerStyle.module.css"
 import facebook from "../images/facebook.svg"
 import instagram from "../images/instagram.svg"
 import linkedin from "../images/linkedin.svg"
@@ -23,11 +22,11 @@ import youtube from "../images/youtube.svg"
 const Footer = () =>
 
 <footer>
-    <Container className="container">
-        <Row className="row">
+    <Container className={style.container}>
+        <Row className={style.row}>
 
             <Col lg={5} md={5} sm={4} xs={12}>
-                <ul className="brandName">
+                <ul className={style.brandName}>
                     <span>
                         <img src={Logo} alt="CR Logo"/> 
                         GROUP
@@ -46,7 +45,7 @@ const Footer = () =>
             </Col>
             
             <Col lg={4} md={4} sm={4} xs={12}>
-                <ul className="socials">
+                <ul className={style.socials}>
                     <span>KEEP IN TOUCH</span>
                     <li><img src={facebook} alt="facebook"/></li>
                     <li><img src={instagram} alt="instagram"/></li>
@@ -58,7 +57,7 @@ const Footer = () =>
             </Col>
 
             <Col lg={3} md={3} sm={4} xs={12}>
-                <ul className="newsletter">
+                <ul className={style.newsletter}>
                     <span>SIGN UP FOR NEWSLETTER</span>
                     <li>
                         <Form.Control placeholder="Your name"/>

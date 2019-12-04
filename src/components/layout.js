@@ -6,7 +6,6 @@ const Layout = props =>
 <>
   <Header></Header>
   {props.children}
-  {/* OVDJE UBACI FOOTER KAD NAPRAVIS */}
   <Footer></Footer>
 
 </>
