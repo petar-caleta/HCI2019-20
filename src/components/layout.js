@@ -1,11 +1,14 @@
 import React from "react"
 import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = props => 
 <>
   <Header></Header>
   {props.children}
   {/* OVDJE UBACI FOOTER KAD NAPRAVIS */}
+  <Footer></Footer>
+
 </>
 
 export default Layout
