@@ -3,8 +3,12 @@ import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import logo from "../images/logoinv.png"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Header = () => 
 
+
+//TRIBA SAM NAZVAT NAVBAR A NE HEADER AL JBG SAD
+
+
+const Header = () => 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     {/*###### LOGO ######*/}
     <Navbar.Brand href="./">
