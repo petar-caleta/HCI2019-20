@@ -3,7 +3,7 @@ import style from "../styles/indexPageStyle.module.css"
 import { Container, Button, ButtonGroup, ButtonToolbar } from "react-bootstrap"
 
 const ApartmentButtonGroup = () => (
-  <Container className={styleMedia.container}>
+  <Container className={style.container}>
     <ButtonToolbar aria-label="Toolbar with button groups">
       <ButtonGroup aria-label="First group">
         <Button variant="secondary">1</Button>
