@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import style from "../styles/ApartmentInfoStyle.module.css"
+import style from "../styles/ApartmentinfoStyle.module.css"
 
 const ApartmentInfo = () => (
   <Container className={style.container}>
