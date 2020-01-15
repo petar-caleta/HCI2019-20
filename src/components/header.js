@@ -30,19 +30,19 @@ const Header = () => (
     <Navbar.Collapse id="responsive-navbar-nav">
       {/*###### BOTUNI ######*/}
       <Nav className="mr-auto">
-        <Nav.Link className="botuni" href="./">
+        <Nav.Link className="botuni" href="../">
           Home
         </Nav.Link>
-        <Nav.Link className="botuni" href="./Blog">
+        <Nav.Link className="botuni" href="../Blog">
           Blog
         </Nav.Link>
-        <Nav.Link className="botuni" href="./AboutUs">
+        <Nav.Link className="botuni" href="../AboutUs">
           About
         </Nav.Link>
-        <Nav.Link className="botuni" href="./Contact">
+        <Nav.Link className="botuni" href="../Contact">
           Contact
         </Nav.Link>
-        <Nav.Link className="botuni" href="./MyGallery">
+        <Nav.Link className="botuni" href="../MyGallery">
           My Gallery
         </Nav.Link>
         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
