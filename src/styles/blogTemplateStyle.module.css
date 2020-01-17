@@ -1,0 +1,35 @@
+.container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    background:#f4f4f4;
+    border-radius: 15px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+.signature{
+    text-align: end;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.renderedHtml{
+    padding: .5rem;
+}
+.renderedHtml p{
+    color:black;
+}
+.renderedHtml h2{
+
+    margin-bottom: 1rem;
+    margin-top:3rem;
+    padding-left: 3rem;
+}
+
+

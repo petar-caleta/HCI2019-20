@@ -30,7 +30,7 @@ const Header = () => (
     <Navbar.Collapse id="responsive-navbar-nav">
       {/*###### BOTUNI ######*/}
       <Nav className="mr-auto">
-        <Nav.Link className="botuni" href="../">
+        <Nav.Link className="botuni" size="large" href="../">
           Home
         </Nav.Link>
         <Nav.Link className="botuni" href="../Blog">
@@ -42,7 +42,7 @@ const Header = () => (
         <Nav.Link className="botuni" href="../Contact">
           Contact
         </Nav.Link>
-        <Nav.Link className="botuni" href="../MyGallery">
+        {/* <Nav.Link className="botuni" href="../MyGallery">
           My Gallery
         </Nav.Link>
         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -51,7 +51,7 @@ const Header = () => (
           <NavDropdown.Item href="#">Action3</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
-        </NavDropdown>
+        </NavDropdown> */}
       </Nav>
 
       {/*###### LOGIN/REGISTER ######*/}

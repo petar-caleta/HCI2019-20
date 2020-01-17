@@ -3,7 +3,7 @@ import style from "../styles/indexPageStyle.module.css"
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap"
 
 const ApartmentCard = () => (
-  <Container className={styleMedia.container}>
+  <Container className={style.container}>
     <Row className={style.row}>
       <Col>
         <Image

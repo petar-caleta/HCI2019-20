@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Container from "react-bootstrap/Container"
+import style from "../styles/blogTemplateStyle.module.css"
 
 export const query = graphql`
   query($slug: String!) {
@@ -8,6 +10,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        author
       }
       html
     }
@@ -17,12 +20,18 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
+      <Container className={style.container}>
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <p>{props.data.markdownRemark.frontmatter.date}</p>
         <div
-        dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
+          className={style.renderedHtml}
+          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+        ></div>
 
-        </div>
+        <p className={style.signature}>
+          {props.data.markdownRemark.frontmatter.author} -{" "}
+          {props.data.markdownRemark.frontmatter.date}
+        </p>
+      </Container>
     </Layout>
   )
 }

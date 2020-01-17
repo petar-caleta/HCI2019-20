@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import Container from "react-bootstrap/Container"
+import style from "../styles/blogStyle.module.css"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -11,6 +13,7 @@ const BlogPage = () => {
             frontmatter {
               title
               date
+              author
             }
             fields {
               slug
@@ -20,22 +23,56 @@ const BlogPage = () => {
       }
     }
   `)
+  let initialItems = [
+    ...new Set(data.allMarkdownRemark.edges.map(edge => edge.node)),
+  ]
+  const [state, setState] = useState({
+    items: initialItems,
+  })
+
+  let filterList = e => {
+    if (!e.target.value.includes("\\")) {
+      let updateList = initialItems
+      updateList = updateList.filter(item => {
+        return (
+          item.frontmatter.title
+            .toLowerCase()
+            .search(e.target.value.toLowerCase()) !== -1
+        )
+      })
+      setState({
+        items: updateList,
+      })
+    }
+  }
 
   return (
     <Layout>
-      <h1>BLOG</h1>
-      <ol>
-        {data.allMarkdownRemark.edges.map(edge => {
-          return (
-            <li>
-              <Link to={`/Blog/${edge.node.fields.slug}`}>
-                <h2>{edge.node.frontmatter.title}</h2>
-                <p>{edge.node.frontmatter.date}</p>
-              </Link>
-            </li>
-          )
-        })}
-      </ol>
+      <Container className={style.container}>
+        <h1>BLOG</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search by title"
+            onChange={filterList}
+          />
+        </form>
+
+        <ul>
+          {state.items.map(item => {
+            return (
+              <li className={style.posts}>
+                <Link to={`/Blog/${item.fields.slug}`}>
+                  <h2>{item.frontmatter.title}</h2>
+                  <p>
+                    {item.frontmatter.author} - {item.frontmatter.date}
+                  </p>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </Container>
     </Layout>
   )
 }
