@@ -50,13 +50,18 @@ const BlogPage = () => {
     <Layout>
       <Container className={style.container}>
         <h1>BLOG</h1>
-        <form>
+        {/* <form>
           <input
             type="text"
             placeholder="Search by title"
             onChange={filterList}
           />
-        </form>
+        </form> */}
+
+        <div class={style.containerSearch}>
+          <input type="text" placeholder="Search..." onChange={filterList} />
+          <div className={style.search}></div>
+        </div>
 
         <ul>
           {state.items.map(item => {

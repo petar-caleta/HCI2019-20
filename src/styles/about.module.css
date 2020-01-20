@@ -1,0 +1,47 @@
+.container {
+  background-color: #343a40;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  list-style: none;
+  border-radius: 15px;
+  color: #989999;
+}
+
+.imageBanner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://cdn.hipwallpaper.com/i/13/48/ZoDaRf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.lgText {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: none;
+  color: #fff;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.border {
+  background: #e1e1e1;
+  height: 3px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+.siteHeading h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}

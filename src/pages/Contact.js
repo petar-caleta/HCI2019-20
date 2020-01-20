@@ -44,8 +44,8 @@ const Contact = () => (
           >
             <Button
               size="lg"
-              variant="outline-primary"
-              style={{ width: "100%" }}
+              variant="primary"
+              style={{ width: "100%", marginTop: "1.5rem" }}
             >
               SEND MESSAGE
             </Button>

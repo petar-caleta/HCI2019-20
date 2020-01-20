@@ -16,7 +16,7 @@ const Header = () => (
     variant="dark"
   >
     {/*###### LOGO ######*/}
-    <Navbar.Brand href="./">
+    <Navbar.Brand href="../">
       <img
         src={logo}
         width="55"
