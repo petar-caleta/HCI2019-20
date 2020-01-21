@@ -1,20 +1,16 @@
 import React from "react"
-import Header from "./Header"
+import Header from "./header"
 import Footer from "./Footer"
 
-const Layout = props => 
-<>
-  <Header></Header>
-  {props.children}
-  <Footer></Footer>
-
-</>
+const Layout = props => (
+  <>
+    <Header></Header>
+    {props.children}
+    <Footer></Footer>
+  </>
+)
 
 export default Layout
-
-
-
-
 
 // import React from "react"
 // import Navigation from "./Navigation"
