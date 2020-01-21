@@ -1,5 +1,4 @@
 .row {
-  margin: 20px 0px;
 }
 
 .ButtonGroup {
@@ -8,10 +7,23 @@
 
 .CardGroup {
   margin: 20px 0px;
+  justify-content: space-between;
+  padding-left: 1000;
+}
+.CardGroup card {
+  padding: 0 2rem;
 }
 
 .container {
-  padding: 40px 0px;
-  margin-bottom: 3rem;
+  padding: 10px 0px;
+  margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+.pillRow {
+  justify-content: space-around;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.mainCard:hover {
+  box-shadow: 0 0 111px rgba(33, 33, 33, 0.4);
 }

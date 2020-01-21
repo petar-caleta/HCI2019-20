@@ -24,3 +24,8 @@
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
+.badge-secondary {
+  padding: 0.5rem;
+  font-size: medium;
+  margin-top: 1rem;
+}

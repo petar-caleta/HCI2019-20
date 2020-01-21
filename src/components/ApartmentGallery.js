@@ -3,7 +3,7 @@ import { Container, Carousel } from "react-bootstrap"
 import style from "../styles/ApartmentGalleryStyle.module.css"
 import "../styles/global.css"
 
-const ApartmentGallery = () => (
+const ApartmentGallery = props => (
   <>
     <Container className={style.container}>
       <Carousel>
@@ -11,7 +11,7 @@ const ApartmentGallery = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://q-cf.bstatic.com/images/hotel/max1280x900/134/134195469.jpg"
+            src={props.apartman.img1}
             alt="First slide"
             width="800"
             height="600"
@@ -22,7 +22,7 @@ const ApartmentGallery = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://r-cf.bstatic.com/images/hotel/max1280x900/134/134195468.jpg"
+            src={props.apartman.img2}
             // src="holder.js/800x400?text=Second slide&bg=282c34"
             alt="Third slide"
             width="800"
@@ -34,7 +34,7 @@ const ApartmentGallery = () => (
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://q-cf.bstatic.com/images/hotel/max1280x900/134/134195466.jpg"
+            src={props.apartman.img3}
             // src="holder.js/800x400?text=Third slide&bg=20232a"
             alt="Third slide"
             width="800"
