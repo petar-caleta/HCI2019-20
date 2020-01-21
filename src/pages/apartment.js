@@ -4,11 +4,15 @@ import ApartmentInfo from "../components/ApartmentInfo"
 import ApartmentGallery from "../components/ApartmentGallery"
 
 const apartment = ({ location }) => {
+  let apartman = {}
+  if (typeof window !== `undefined`) {
+    apartman = location.state.props
+  }
   return (
     <>
       <Layout>
-        <ApartmentGallery apartman={location.state.props} />
-        <ApartmentInfo apartman={location.state.props} />
+        <ApartmentGallery apartman={apartman} />
+        <ApartmentInfo apartman={apartman} />
       </Layout>
     </>
   )
